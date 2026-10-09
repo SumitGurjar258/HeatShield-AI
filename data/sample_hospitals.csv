@@ -1,0 +1,7 @@
+id,name,latitude,longitude,address,capabilities,contact_endpoint,is_active
+HOSP-LON-01,St Thomas' Heat Emergency Hospital,51.4988,-0.1186,"Westminster Bridge Rd, London SE1 7EH","[""Heat Stroke Resuscitation"", ""Burns/Cooling Unit"", ""ICU"", ""Renal Dialysis"", ""Adult Emergency""]",dispatch@stthomas.demo-nhs.net,1
+HOSP-LON-02,Royal London Heatwave Trauma Centre,51.5190,-0.0594,"Whitechapel Rd, London E1 1FR","[""Heat Stroke Resuscitation"", ""ICU"", ""Pediatric Emergency"", ""Cardiology"", ""Adult Emergency""]",trauma@royallondon.demo-nhs.net,1
+HOSP-LON-03,King's College Hospital Emergency Unit,51.4682,-0.0935,"Denmark Hill, Brixton, London SE5 9RS","[""Heat Stroke Resuscitation"", ""Burns/Cooling Unit"", ""Renal Dialysis"", ""Adult Emergency""]",ops@kings.demo-nhs.net,1
+HOSP-LON-04,St Mary's Urgent & Acute Care Pavilion,51.5175,-0.1746,"Praed St, Paddington, London W2 1NY","[""Pediatric Emergency"", ""ICU"", ""Adult Emergency""]",dispatch@stmarys.demo-nhs.net,1
+HOSP-LON-05,North Middlesex University Hospital,51.6143,-0.0766,"Sterling Way, London N18 1QX","[""Adult Emergency"", ""Renal Dialysis"", ""Cooling Therapy""]",emergency@northmid.demo-nhs.net,1
+HOSP-LON-06,Croydon Health Services Community Hospital,51.3887,-0.1147,"530 London Rd, Thornton Heath, Croydon CR7 7YE","[""Adult Emergency"", ""Geriatric Heat Vulnerability""]",ops@croydon.demo-nhs.net,1

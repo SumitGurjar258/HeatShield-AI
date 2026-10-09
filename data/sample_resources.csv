@@ -1,0 +1,7 @@
+hospital_id,total_beds,occupied_beds,available_staffed_beds,specialist_availability,nursing_staff_count,nursing_staff_status,ambulance_count,critical_medicines_status,supplies_status,verification_status
+HOSP-LON-01,380,342,14,"Emergency: 4, Cooling: 2, ICU: 2",28,Adequate,5,Adequate,Adequate,Simulated
+HOSP-LON-02,420,408,4,"Emergency: 2, Cooling: 0, ICU: 1",14,Critical Shortage,2,Low,Critical,Simulated
+HOSP-LON-03,310,275,18,"Emergency: 3, Cooling: 1, ICU: 2",22,Adequate,4,Adequate,Adequate,Simulated
+HOSP-LON-04,290,282,3,"Emergency: 1, Cooling: 0, ICU: 1",11,Strained,1,Low,Low,Simulated
+HOSP-LON-05,260,220,25,"Emergency: 3, Cooling: 1, ICU: 1",20,Adequate,3,Adequate,Adequate,Simulated
+HOSP-LON-06,180,172,2,"Emergency: 1, Cooling: 0, ICU: 0",8,Critical Shortage,1,Critical,Low,Simulated
