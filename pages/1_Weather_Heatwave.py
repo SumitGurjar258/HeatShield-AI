@@ -2,7 +2,7 @@ import streamlit as st
 import plotly.graph_objects as go
 from datetime import datetime
 import folium
-from streamlit_folium import folium_static
+from streamlit_folium import st_folium
 from config import Config
 from services.weather_service import WeatherService
 from ui_components import apply_custom_theme, get_risk_badge_html, get_verification_badge_html
@@ -196,7 +196,7 @@ with col_map:
     m = folium.Map(
         location=[st.session_state["selected_lat"], st.session_state["selected_lon"]],
         zoom_start=11,
-        tiles="CartoDB positron"
+        tiles="OpenStreetMap"
     )
     
     # Regional heat perimeter circle
@@ -217,7 +217,7 @@ with col_map:
         icon=folium.Icon(color="red" if "Crit" in curr_risk["level"] else "orange", icon="info-sign")
     ).add_to(m)
     
-    folium_static(m, width=480, height=380)
+    st_folium(m, width=480, height=380, returned_objects=[])
 
 # Forecast Schedule Table
 st.markdown("<div class='section-title'>📋 7-Day Meteorological Schedule & Heat-Risk Classification</div>", unsafe_allow_html=True)

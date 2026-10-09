@@ -1,6 +1,6 @@
 import streamlit as st
 import folium
-from streamlit_folium import folium_static
+from streamlit_folium import st_folium
 import plotly.express as px
 from datetime import datetime, timezone
 from config import Config
@@ -85,7 +85,7 @@ with tab1:
         center_lat = st.session_state.get("selected_lat", Config.DEFAULT_LAT)
         center_lon = st.session_state.get("selected_lon", Config.DEFAULT_LON)
         
-        hosp_map = folium.Map(location=[center_lat, center_lon], zoom_start=11, tiles="CartoDB positron")
+        hosp_map = folium.Map(location=[center_lat, center_lon], zoom_start=11, tiles="OpenStreetMap")
         
         for ev in evaluations:
             sev = ev["severity"]
@@ -109,7 +109,7 @@ with tab1:
                 icon=folium.Icon(color=marker_color, icon="plus-sign")
             ).add_to(hosp_map)
             
-        folium_static(hosp_map, width=540, height=440)
+        st_folium(hosp_map, width=540, height=440, returned_objects=[])
         
     with c_alerts:
         st.markdown(f"**Active Regional GeoAlerts ({len(active_alerts)})**")
